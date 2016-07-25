@@ -11,15 +11,20 @@
 
 <style>
 
-/* Grid Style */
+/* Card Nav Style */
 
-.content-grid {
-/*  max-width: 1024px;*/
+.mdl-layout {
   width: 80%;
+  right: 10%;
+  left: 10%;
+  margin-bottom: 10px;
+  position: relative;
 }
 
-.content-grid .mdl-cell {
-/*  margin: 10px;*/
+/* Grid Style */
+
+.mdl-grid {
+  padding: 10px;
 }
 
 /* Card Style */
@@ -107,69 +112,89 @@
 
 </style>
 
-<!-- Grid -->
-<div class="content-grid mdl-grid">
+<!-- Card Nav -->
+<!-- Simple header with fixed tabs. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+  <header class="mdl-layout__header">
+    <!-- Tabs -->
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+      <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Tab 1</a>
+      <a href="#fixed-tab-2" class="mdl-layout__tab">Tab 2</a>
+      <a href="#fixed-tab-3" class="mdl-layout__tab">Tab 3</a>
+    </div>
+  </header>
+  <main class="mdl-layout__content">
+    <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1"></section>
+    <section class="mdl-layout__tab-panel" id="fixed-tab-2"></section>
+    <section class="mdl-layout__tab-panel" id="fixed-tab-3"></section>
 
-<!--   <div class="mdl-cell mdl-cell--1-col"></div> -->
+    <!-- Grid -->
+    <div class="content-grid mdl-grid">
 
-<!--   <div class="mdl-cell mdl-cell--2-col"> -->
-    <div class="mdl-cell mdl-cell--4-col demo-card-image mdl-card vd mdl-shadow--2dp" >
-      <div class="mdl-card__actions">
-        <div class="card-title"><span>visual design</span></div>
-        <div class="show-on-hover">
-          <div class="card-tags"><span>tag1 / tag3 / tag4</span></div>
-          <div class="card-description"><span>This is a collection of artworks illustrating foundational design principles.</span></div>
-        </div> <!-- show on hover -->
-      </div> <!-- card actions -->
-    </div> <!-- demo card -->
-<!--   </div>  --><!-- mdl-cell -->
+    <!--   <div class="mdl-cell mdl-cell--1-col"></div> -->
 
-<!--   <div class="mdl-cell mdl-cell--2-col"> -->
-    <div class="mdl-cell mdl-cell--4-col demo-card-image mdl-card wtm mdl-shadow--2dp">
-      <div class="mdl-card__actions">
-        <div class="card-title"><span>words that matter</span></div>
-        <div class="show-on-hover">
-          <div class="card-tags"><span>tag1 / tag3 / tag4</span></div>
-          <div class="card-description"><span>Game demo for DoSomething.org to educate teens about unhealthy relationships.</span></div>
-        </div> <!-- show on hover -->
-      </div> <!-- card actions -->
-    </div> <!-- demo card -->
-<!--   </div> --> <!-- mdl-cell -->
+    <!--   <div class="mdl-cell mdl-cell--2-col"> -->
+        <div class="mdl-cell mdl-cell--4-col demo-card-image mdl-card vd mdl-shadow--2dp" >
+          <div class="mdl-card__actions">
+            <div class="card-title"><span>visual design</span></div>
+            <div class="show-on-hover">
+              <div class="card-tags"><span>tag1 / tag3 / tag4</span></div>
+              <div class="card-description"><span>This is a collection of artworks illustrating foundational design principles.</span></div>
+            </div> <!-- show on hover -->
+          </div> <!-- card actions -->
+        </div> <!-- demo card -->
+    <!--   </div>  --><!-- mdl-cell -->
 
-<!--   <div class="mdl-cell mdl-cell--2-col"> -->
-    <div class="mdl-cell mdl-cell--4-col demo-card-image mdl-card ftb mdl-shadow--2dp">
-      <div class="mdl-card__actions">
-        <div class="card-title"><span>feed the baby</span></div>
-        <div class="show-on-hover">
-          <div class="card-tags"><span>tag1 / tag3 / tag4</span></div>
-          <div class="card-description"><span>Game released by DoSomething.org in order to encourage sign-ups for a campaign tackling teenage pregnancy.</span></div>
-        </div> <!-- show on hover -->
-      </div> <!-- card actions -->
-    </div> <!-- demo card -->
-<!--   </div> --> <!-- mdl-cell -->
+    <!--   <div class="mdl-cell mdl-cell--2-col"> -->
+        <div class="mdl-cell mdl-cell--4-col demo-card-image mdl-card wtm mdl-shadow--2dp">
+          <div class="mdl-card__actions">
+            <div class="card-title"><span>words that matter</span></div>
+            <div class="show-on-hover">
+              <div class="card-tags"><span>tag1 / tag3 / tag4</span></div>
+              <div class="card-description"><span>Game demo for DoSomething.org to educate teens about unhealthy relationships.</span></div>
+            </div> <!-- show on hover -->
+          </div> <!-- card actions -->
+        </div> <!-- demo card -->
+    <!--   </div> --> <!-- mdl-cell -->
 
-    <div class="mdl-cell mdl-cell--4-col demo-card-image mdl-card rcs mdl-shadow--2dp">
-      <div class="mdl-card__actions">
-        <div class="card-title"><span>reinventing career services</span></div>
-        <div class="show-on-hover">
-          <div class="card-tags"><span>tag1 / tag3 / tag4</span></div>
-          <div class="card-description"><span>Class project redesign of the UChicago Career Services structure to focus on career discovery.</span></div>
-        </div> <!-- show on hover -->
-      </div> <!-- card actions -->
-    </div> <!-- demo card -->
+    <!--   <div class="mdl-cell mdl-cell--2-col"> -->
+        <div class="mdl-cell mdl-cell--4-col demo-card-image mdl-card ftb mdl-shadow--2dp">
+          <div class="mdl-card__actions">
+            <div class="card-title"><span>feed the baby</span></div>
+            <div class="show-on-hover">
+              <div class="card-tags"><span>tag1 / tag3 / tag4</span></div>
+              <div class="card-description"><span>Game released by DoSomething.org in order to encourage sign-ups for a campaign tackling teenage pregnancy.</span></div>
+            </div> <!-- show on hover -->
+          </div> <!-- card actions -->
+        </div> <!-- demo card -->
+    <!--   </div> --> <!-- mdl-cell -->
 
-    <div class="mdl-cell mdl-cell--4-col demo-card-image mdl-card sbd mdl-shadow--2dp">
-      <div class="mdl-card__actions">
-        <div class="card-title"><span>sliced bread digital</span></div>
-        <div class="show-on-hover">
-          <div class="card-tags"><span>tag1 / tag3 / tag4</span></div>
-          <div class="card-description"><span>Online serial created to accomodate works too long to be published in print.</span></div>
-        </div> <!-- show on hover -->
-      </div> <!-- card actions -->
-    </div> <!-- demo card -->
+        <div class="mdl-cell mdl-cell--4-col demo-card-image mdl-card rcs mdl-shadow--2dp">
+          <div class="mdl-card__actions">
+            <div class="card-title"><span>reinventing career services</span></div>
+            <div class="show-on-hover">
+              <div class="card-tags"><span>tag1 / tag3 / tag4</span></div>
+              <div class="card-description"><span>Class project redesign of the UChicago Career Services structure to focus on career discovery.</span></div>
+            </div> <!-- show on hover -->
+          </div> <!-- card actions -->
+        </div> <!-- demo card -->
+
+        <div class="mdl-cell mdl-cell--4-col demo-card-image mdl-card sbd mdl-shadow--2dp">
+          <div class="mdl-card__actions">
+            <div class="card-title"><span>sliced bread digital</span></div>
+            <div class="show-on-hover">
+              <div class="card-tags"><span>tag1 / tag3 / tag4</span></div>
+              <div class="card-description"><span>Online serial created to accomodate works too long to be published in print.</span></div>
+            </div> <!-- show on hover -->
+          </div> <!-- card actions -->
+        </div> <!-- demo card -->
 
 </div> <!-- mdl-grid -->
 
+  </main>
+
+
+</div> <!-- mdl content -->
 <!-- Card -->
 <!-- <div class="demo-card-image mdl-card mdl-shadow--2dp">
   <div class="mdl-card__actions">
